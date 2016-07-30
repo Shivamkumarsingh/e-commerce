@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2016-07-08 23:04:13
+  order_amount: 1
+  discount: 1
+  shipping_amount: 1
+  net_amount: MyString
+
+two:
+  date: 2016-07-08 23:04:13
+  order_amount: 1
+  discount: 1
+  shipping_amount: 1
+  net_amount: MyString
