@@ -1,7 +1,13 @@
+<style>
+.row {
+  float: center;
+}
+
+</style>
 <!DOCTYPE html>
 <html>
 <head>
-
+  <meta charset="utf-8">
   <title>e-Commerce</title>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -17,7 +23,10 @@
     </div>
     <div id="navbar">
       <ul class="nav navbar-nav">
+      
         <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'About', root_path %></li>
+        <li><%= link_to 'Contact', root_path %></li>
         
         
 
@@ -64,16 +73,7 @@
       <%= value %>
     </div>
   <% end %>
-  <form>
-          <div class="form-group">
-            <div class="input-group">
-            <span class="input-group-addon">
-            <%= search_field(:product, :product_name , :style => "width:500px;margin-left:300px;", :class => "form-control", :placeholder => "So, What are you wishing for today?") %>
-            
-                <%= submit_tag("Search", :class => "btn btn-warning", :style => "float:left;") %>
-            </div>
-          </div>
-        </form>
+  
         <br/>
     <div class="row">
       <div class="col-sm-1 col-sm-offset-2"><span><%= link_to'Men', shop_men_path %></div>

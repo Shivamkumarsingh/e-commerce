@@ -4,21 +4,22 @@
 
 	<% @products.each do |p| %>
 	<div class="col-sm-3" >
-		<div id="card" class="outercard"> 
-  			<div class="front">
-  				<div> 
-				<%=link_to(image_tag(p.image.url, :style => "height:250px;width:250px;" ),   :class => "img-circle") %> <br>
-				</div>
-      		</div> 
+		<div class ="thumbnail"> 
+  			
+  		
+				<%=link_to(image_tag(p.image.url, :style => "height:250px;width:250px;" ),   :class => "img-circle") %> 
+			
+      		 
 
-	      	<div class="back">
-				<div class="lright">
-				<a href="/page/<%=p.id%>">Quick View</a><br>
-				$<%=p.sale_price%>
+	      	
+			 <div class ="cen">
+				<p ><a href="/page/<%=p.id%>">Quick View</a></p>
+				<p>$<%=p.sale_price%></p>
+				</div>
 				</div>
 			</div> 
-		</div> 
-	</div>
+		
+	
 	<% end %>
 	</div>
 	

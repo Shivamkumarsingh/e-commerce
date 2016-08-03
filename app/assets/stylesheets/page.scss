@@ -2,31 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body{
-	background-color:blue;
-}
-#card{
-	width:100%;
-	border: 5px solid red;
-	margin-top:20px;
-}
-#imag{
-	width:150px;
-	height:150px;
-	
-}
-.imag{
-	width:150px;
-	height:150px;
-}
-.outercard{
-	border:5px solid white;
-	background-color:yellow;
-
-}
-body{
-	background-color:gothic white;
-}
-.lright{
-	margin-left:40%;
+.cen{
+	text-align: center;
 }
